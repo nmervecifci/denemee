@@ -25,30 +25,18 @@
 //       950:{
 //          slidesPerView:3
 //       },
-
-        // Yatay Swiper 1
-        new Swiper('.swiper-container.swiper-horizontal:first-child', {
-          direction: 'horizontal',
-          pagination: {
-              el: '.swiper-pagination',
-              clickable: true,
-          },
-      });
-
-      // Yatay Swiper 2
-      new Swiper('.swiper-container.swiper-horizontal:last-child', {
-          direction: 'horizontal',
-          pagination: {
-              el: '.swiper-pagination',
-              clickable: true,
-          },
-      });
-
-      // Dikey Swiper
-      new Swiper('.swiper-container.swiper-vertical', {
-          direction: 'vertical',
-          pagination: {
-              el: '.swiper-pagination',
-              clickable: true,
-          },
-      });
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 50,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+  var swiper2 = new Swiper(".mySwiper2", {
+    direction: "vertical",
+    spaceBetween: 50,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });

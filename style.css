@@ -229,39 +229,44 @@
   height: 100%; /* Dikey kayma için slayt yüksekliğini 100% olarak ayarlayın 
 } */
  }
- body, html {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
+ html,
+    body {
+      overflow: hidden;
+      position: relative;
+      height: 100%;
+    }
 
-.swiper-container {
-  width: 100vw;
-  height: 100vh;
-}
+    body {
+      background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
 
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  color: white;
-}
+    .swiper {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+    }
 
-.swiper-slide:nth-child(odd) {
-  background-color: #4CAF50;
-}
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-.swiper-slide:nth-child(even) {
-  background-color: #2196F3;
-}
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-.swiper-slide-vertical {
-  background-color: #f44336;
-}
-
-/* Eklenen stiller */
-html, body {
-  height: 100%;
-  margin: 0;
-}
+    .swiper-v {
+      background: #eee;
+    }
